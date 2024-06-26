@@ -9,5 +9,3 @@ export const show = (id?: string) => {
 };
 
 window.__sdk__ = { show };
-
-console.log(1)
