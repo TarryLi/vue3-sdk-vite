@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+    </style>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0, maximum-scale=1,user-scalable=0, viewport-fit=cover"
+    />
+    <script type="module" src="/src/index.ts"></script>
+  </head>
+  <body>
+    <div>渲染元素：</div>
+    <script>
+      (function () {
+        setTimeout(function () {
+          console.log(window.__sdk__);
+          window.__sdk__.show();
+        }, 100);
+      })();
+    </script>
+  </body>
+</html>
